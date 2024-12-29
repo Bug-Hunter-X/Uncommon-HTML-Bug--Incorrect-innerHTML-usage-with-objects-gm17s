@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect usage of innerHTML with an object
+    let myObject = { name: "John", age: 30 };
+    document.getElementById("myDiv").innerHTML = myObject; 
+  </script>
+</body>
+</html>
